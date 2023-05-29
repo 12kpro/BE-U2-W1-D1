@@ -9,14 +9,10 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Slf4j
 @ToString
-public abstract class Consumation {
-    String name;
-    Double price;
-    Double calories;
-
+public abstract class Consumation extends Product{
+    protected double calories;
     public Consumation(String name, Double price, Double calories) {
-        this.name = name;
-        this.price = price;
+        super(name, price);
         this.calories = calories;
     }
 }
