@@ -1,4 +1,4 @@
-package entities;
+package com.godfathers.pizza.entities;
 
 import lombok.Getter;
 import lombok.Setter;
