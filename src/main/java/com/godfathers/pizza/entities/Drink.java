@@ -9,10 +9,19 @@ import org.springframework.stereotype.Component;
 @Setter
 @Getter
 @Slf4j
-@ToString
+//@ToString
 ///@Component
 public class Drink extends  Consumation{
     public Drink(String name, Double price, Double calories) {
         super(name, price, calories);
+    }
+
+    @Override
+    public String toString() {
+        return "Drink{" +
+                "calories=" + calories +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
